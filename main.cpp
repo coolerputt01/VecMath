@@ -1,56 +1,18 @@
+/*
+
+This program was written by Coolerputt, 2026
+
+*/
+
 #include <iostream>
-#include <cmath>
-
-class Vector2 {
-	public:
-
-		Vector2() = default;
-		Vector2(int x,int y) : x(x),y(y){}
-		~Vector2() = default;
-		
-		void setX(int &dx){
-			x = dx;
-		}
-
-		void setY(int &dy){
-                        y = dy;
-                }
-
-		int getX() const{
-                        return x;
-                }
-
-                int getY() const {
-                        return y;
-                }
-	
-		void scale(int scale){
-			x *= scale;
-			y *= scale;
-		}
-		
-		int getLength(){
-			return std::sqrt(x * x + y * y);
-		}
-		
-		Vector2 normalized() {
-			int length = getLength();
-			return length > 0 ? Vector2{x/length,y/length} : Vector2{};
-		}
-
-		int dot(const Vector2& vec2) const {
-			return x * vec2.getX() + y * vec2.getY();
-		}
-		
-		
-	private:
-		int x,y;
-
-};
+#include <vec2.hpp>
 
 int main(){
-	Vector2 vec2 = Vector2(2,3);
-	vec2.scale(5);
-	std::cout<<vec2.getY()<<'\n';
+	Vector2 vec2_1 = Vector2(2,3);
+	Vector2 vec2_2 = Vector2(5,6);
+	vec2_2 += vec2_1;
+	vec2_2.scale(5);
+	vec2_2.normalized();
+	std::cout<<vec2_2.getLength()<<'\n';
 	return 0;
 }

@@ -1,0 +1,1 @@
+g++ main.cpp -Isrc -o builds/main
