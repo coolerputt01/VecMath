@@ -82,14 +82,6 @@ Contributions make the open-source community an amazing place to learn and creat
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Author Info
-
-**Coolerputt**
-*   LinkedIn: [your_profile_link]
-*   Twitter: [@your_handle]
-*   Personal Website: [your_site_link]
-
 ---
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
